@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using App1.iOS;
 using Foundation;
 using UIKit;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.iOS;
+
+
 
 namespace App1.iOS
 {
@@ -13,6 +17,9 @@ namespace App1.iOS
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
+
+        // this in your namespace
+      
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
         // method you should instantiate the window, load the UI into it and then make the window
@@ -22,6 +29,7 @@ namespace App1.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+           
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

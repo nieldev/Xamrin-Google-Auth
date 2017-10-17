@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using GoogleLogin.Views;
 using Xamarin.Forms;
 
 namespace App1
@@ -13,7 +13,7 @@ namespace App1
         {
             InitializeComponent();
 
-            MainPage = new App1.MainPage();
+            MainPage = new NavigationPage(new MainCsPage());
         }
 
         protected override void OnStart()
